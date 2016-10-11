@@ -248,6 +248,7 @@
     <Content Include="SamplePages\ImageEx\ImageEx.png" />
     <Content Include="SamplePages\Incremental Loading Collection\icon.png" />
     <Content Include="SamplePages\LinkedIn Service\LinkedInLogo.png" />
+    <Content Include="SamplePages\MarkdownTextBlock\MarkdownTextBlock.png" />
     <Content Include="SamplePages\Microsoft Graph Service\OfficeLogo.png" />
     <Content Include="SamplePages\Microsoft Graph Service\user.png" />
     <Content Include="SamplePages\Offset\OffsetBehavior.png" />
@@ -316,7 +317,8 @@
     <Content Include="SamplePages\Object Storage\ObjectStorageCode.bind" />
     <Content Include="SamplePages\WeatherLiveTileAndToast\WeatherLiveTileAndToastCodeJavaScript.bind" />
     <Content Include="SamplePages\Microsoft Graph Service\MicrosoftGraphCode.bind" />
-	<Content Include="SamplePages\BackgroundTaskHelper\BackgroundTaskHelperCode.bind" />
+    <Content Include="SamplePages\BackgroundTaskHelper\BackgroundTaskHelperCode.bind" />
+    <Content Include="SamplePages\MarkdownTextBlock\MarkdownTextBlock.bind" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -374,6 +376,9 @@
     <Compile Include="SamplePages\Incremental Loading Collection\Person.cs" />
     <Compile Include="SamplePages\LinkedIn Service\LinkedInPage.xaml.cs">
       <DependentUpon>LinkedInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\MarkdownTextBlock\MarkdownTextBlockPage.xaml.cs">
+      <DependentUpon>MarkdownTextBlockPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SamplePages\Microsoft Graph Service\MicrosoftGraphPage.xaml.cs">
       <DependentUpon>MicrosoftGraphPage.xaml</DependentUpon>
@@ -515,6 +520,10 @@
     <Page Include="SamplePages\LinkedIn Service\LinkedInPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\MarkdownTextBlock\MarkdownTextBlockPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SamplePages\Microsoft Graph Service\MicrosoftGraphPage.xaml">
       <Generator>MSBuild:Compile</Generator>

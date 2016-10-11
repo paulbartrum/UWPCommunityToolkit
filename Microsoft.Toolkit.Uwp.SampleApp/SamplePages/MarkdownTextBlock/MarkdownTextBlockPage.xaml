@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MarkdownTextBlockPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Microsoft.Toolkit.Uwp.SampleApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource Brush-Grey-05}">
+        <controls:MarkdownTextBlock x:Name="MarkdownTextBlockControl"
+                                    Grid.Column="1"
+                                    Markdown="{Binding Markdown.Value, Mode=OneWay}"
+                                    IsTextSelectionEnabled="{Binding IsTextSelectionEnabled.Value, Mode=OneWay}"/>
+    </Grid>
+</Page>

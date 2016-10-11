@@ -66,6 +66,42 @@
     <Compile Include="HeaderedTextBlock\HeaderedTextBlock.cs" />
     <Compile Include="HeaderedTextBlock\HeaderedTextBlock.Properties.cs" />
     <Compile Include="BladeControl\Blade.Events.cs" />
+    <Compile Include="MarkdownTextBlock\Display\ILinkRegister.cs" />
+    <Compile Include="MarkdownTextBlock\Display\MarkdownTable.cs" />
+    <Compile Include="MarkdownTextBlock\Display\XamlRenderer.cs" />
+    <Compile Include="MarkdownTextBlock\Helpers\Common.cs" />
+    <Compile Include="MarkdownTextBlock\Helpers\SmartWeakEvent.cs" />
+    <Compile Include="MarkdownTextBlock\MarkdownLinkClickArgs.cs" />
+    <Compile Include="MarkdownTextBlock\MarkdownTextBlock.xaml.cs">
+      <DependentUpon>MarkdownTextBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\CodeBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\HeaderBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\HorizontalRuleBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\LinkReferenceBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\ListItemBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\ListBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\ParagraphBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\QuoteBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\TableColumnDefinition.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\TableCell.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\TableRow.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Blocks\TableBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\BoldTextInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\CodeInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\HyperlinkInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\IInlineContainer.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\IInlineLeaf.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\ILinkElement.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\ItalicTextInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\MarkdownLinkInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\StrikethroughTextInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\SuperscriptTextInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\Inlines\TextRunInline.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\MarkdownBlock.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\MarkdownDocument.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\MarkdownElement.cs" />
+    <Compile Include="MarkdownTextBlock\Parse\MarkdownInline.cs" />
     <Compile Include="SlidableListItem\SwipeStatus.cs" />
     <Compile Include="SlidableListItem\SwipeStatusChangedEventArgs.cs" />
     <None Include="Microsoft.Toolkit.Uwp.UI.Controls.ruleset" />
@@ -123,6 +159,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
     <Page Include="ImageEx\ImageEx.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MarkdownTextBlock\MarkdownTextBlock.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

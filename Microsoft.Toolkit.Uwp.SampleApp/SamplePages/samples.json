@@ -98,6 +98,14 @@
         "CodeUrl": "https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel",
         "XamlCodeFile": "DropShadowPanelXaml.bind",
         "Icon": "/SamplePages/DropShadowPanel/DropShadowPanel.png"
+      },
+      {
+        "Name": "MarkdownTextBlock",
+        "Type": "MarkdownTextBlockPage",
+        "About": "MarkdownTextBlock is a control that can display of markdown text.",
+        "CodeUrl": "https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock",
+        "XamlCodeFile": "MarkdownTextBlock.bind",
+        "Icon": "/SamplePages/MarkdownTextBlock/MarkdownTextBlock.png"
       }
     ]
   },
